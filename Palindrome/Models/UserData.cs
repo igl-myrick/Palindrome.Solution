@@ -8,5 +8,10 @@ namespace Palindrome.Models
     {
       Input = userData;
     }
+
+    public string CheckIfValid()
+    {
+      return Input;
+    }
   }
 }
