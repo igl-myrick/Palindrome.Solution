@@ -20,5 +20,12 @@ namespace Palindrome.Tests
       UserData newPhrase = new UserData("level");
       Assert.AreEqual("level", newPhrase.CheckIfValid());
     }
+
+    [TestMethod]
+    public void CheckIfValid_ReturnsUserInputReversed_String()
+    {
+      UserData newPhrase = new UserData("levels");
+      Assert.AreEqual("slevel", newPhrase.CheckIfValid());
+    }
   }
 }
