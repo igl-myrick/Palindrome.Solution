@@ -1,3 +1,5 @@
+using System;
+
 namespace Palindrome.Models
 {
   public class UserData
@@ -11,7 +13,10 @@ namespace Palindrome.Models
 
     public string CheckIfValid()
     {
-      return Input;
+      char[] inputArr = Input.ToCharArray(0, Input.Length);
+      Array.Reverse(inputArr);
+      string outputStr = String.Concat(inputArr);
+      return outputStr;
     }
   }
 }
