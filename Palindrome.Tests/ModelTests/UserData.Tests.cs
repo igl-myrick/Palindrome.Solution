@@ -15,17 +15,17 @@ namespace Palindrome.Tests
     }
 
     [TestMethod]
-    public void ReversedData_ReturnsUserInput_String()
+    public void ReverseData_ReturnsUserInput_String()
     {
       UserData newPhrase = new UserData("level");
-      Assert.AreEqual("level", newPhrase.ReversedData());
+      Assert.AreEqual("level", newPhrase.ReverseData());
     }
 
     [TestMethod]
-    public void ReversedData_ReturnsUserInputReversed_String()
+    public void ReverseData_ReturnsUserInputReversed_String()
     {
       UserData newPhrase = new UserData("levels");
-      Assert.AreEqual("slevel", newPhrase.ReversedData());
+      Assert.AreEqual("slevel", newPhrase.ReverseData());
     }
 
     [TestMethod]

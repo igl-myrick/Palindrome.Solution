@@ -11,7 +11,7 @@ namespace Palindrome.Models
       Input = userData;
     }
 
-    public string ReversedData()
+    public string ReverseData()
     {
       char[] inputArr = Input.ToCharArray(0, Input.Length);
       Array.Reverse(inputArr);
@@ -21,7 +21,7 @@ namespace Palindrome.Models
 
     public bool CheckIfValid()
     {
-      if (ReversedData() == Input)
+      if (ReverseData() == Input)
       {
         return true;
       }
