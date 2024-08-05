@@ -11,12 +11,24 @@ namespace Palindrome.Models
       Input = userData;
     }
 
-    public string CheckIfValid()
+    public string ReversedData()
     {
       char[] inputArr = Input.ToCharArray(0, Input.Length);
       Array.Reverse(inputArr);
-      string outputStr = String.Concat(inputArr);
-      return outputStr;
+      string result = String.Concat(inputArr);
+      return result;
+    }
+
+    public bool CheckIfValid()
+    {
+      if (ReversedData() == Input)
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
   }
 }
