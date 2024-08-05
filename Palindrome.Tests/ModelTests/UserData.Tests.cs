@@ -34,5 +34,11 @@ namespace Palindrome.Tests
       UserData newPhrase = new UserData("level");
       Assert.AreEqual(true, newPhrase.CheckIfValid());
     }
+
+    public void CheckIfValid_ReturnFalseIfInvalid_Boolean()
+    {
+      UserData newPhrase = new UserData("levels");
+      Assert.AreEqual(false, newPhrase.CheckIfValid());
+    }
   }
 }
