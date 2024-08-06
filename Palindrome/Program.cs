@@ -14,6 +14,7 @@ namespace Palindrome
 
       static void VerifyInput(string input)
       {
+        Console.WriteLine("----------------------------------------");
         Console.WriteLine($"Your input: {input}");
         Console.WriteLine("Is this correct? Write 'yes' to continue with the check or 'no' to input a new phrase.");
         string userResponse = Console.ReadLine();
@@ -25,6 +26,7 @@ namespace Palindrome
         }
         else
         {
+          Console.WriteLine("Re-enter your phrase:");
           string newInput = Console.ReadLine();
           VerifyInput(newInput);
         }
