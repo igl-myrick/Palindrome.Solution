@@ -20,8 +20,8 @@ namespace Palindrome
         string userResponse = Console.ReadLine();
         if (userResponse.ToLower() == "yes")
         {
-          UserData newData = new UserData(input);
-          string reversedInput = newData.ReverseData();
+          PalindromeVerifier newData = new PalindromeVerifier(input);
+          string reversedInput = newData.ReverseStr();
           CheckInput(newData);
         }
         else
@@ -32,7 +32,7 @@ namespace Palindrome
         }
       }
 
-      static void CheckInput(UserData input)
+      static void CheckInput(PalindromeVerifier input)
       {
         if (input.CheckIfValid() == true)
         {

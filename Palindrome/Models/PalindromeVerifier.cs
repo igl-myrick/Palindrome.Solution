@@ -2,16 +2,16 @@ using System;
 
 namespace Palindrome.Models
 {
-  public class UserData
+  public class PalindromeVerifier
   {
     public string Input { get; set; }
 
-    public UserData(string userData)
+    public PalindromeVerifier(string userStr)
     {
-      Input = userData;
+      Input = userStr;
     }
 
-    public string ReverseData()
+    public string ReverseStr()
     {
       char[] inputArr = Input.ToCharArray(0, Input.Length);
       Array.Reverse(inputArr);
@@ -21,7 +21,7 @@ namespace Palindrome.Models
 
     public bool CheckIfValid()
     {
-      if (ReverseData() == Input)
+      if (ReverseStr() == Input)
       {
         return true;
       }
